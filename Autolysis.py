@@ -9,7 +9,7 @@ import argparse
 from dotenv import load_dotenv
 
 # Load environment variables from the .env file
-load_dotenv(dotenv_path="C:/Users/91963/OneDrive/Documents/TDS Project 2/Open_AI_secret_Key.env")
+load_dotenv()
 
 
 
