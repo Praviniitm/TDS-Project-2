@@ -11,10 +11,20 @@ from dotenv import load_dotenv
 # Load environment variables from the .env file
 load_dotenv()
 
+def get_api_key():
+    api_key = os.getenv("Open_AI_secret_Key")
+    if not api_key:
+        # Prompt user for the key if it's not found in the environment variables
+        print("Open_AI_secret_Key environment variable not found.")
+        api_key = input("Please enter your Open_AI_secret_Key: ").strip()
 
+        # Save the key to the environment for this session
+        os.environ["Open_AI_secret_Key"] = api_key
+    return api_key
 
-# Access the environment variable
-AIPROXY_TOKEN  = os.getenv("Open_AI_secret_Key")
+# Get the API key
+AIPROXY_TOKEN = get_api_key()
+
 
 
 if not AIPROXY_TOKEN:
