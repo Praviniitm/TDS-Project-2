@@ -17,11 +17,11 @@ def install_dependencies():
         "httpx",
         "python-dotenv",
         "rich",
-        "platformdirs"
-		"os"
-		"json"
-		"requests"
-		"matplotlib.pyplot"
+        "platformdirs",
+		"os",
+		"json",
+		"requests",
+		"matplotlib.pyplot",
 		"argparse"
     ]
     for package in required_packages:
