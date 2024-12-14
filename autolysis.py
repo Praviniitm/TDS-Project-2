@@ -39,14 +39,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_api_key():
-    api_key = os.getenv("Open_AI_secret_Key")
+    api_key = os.getenv("AIPROXY_TOKEN")
     if not api_key:
         # Prompt user for the key if it's not found in the environment variables
         print("Open_AI_secret_Key environment variable not found.")
         api_key = input("Please enter your Open_AI_secret_Key: ").strip()
 
         # Save the key to the environment for this session
-        os.environ["Open_AI_secret_Key"] = api_key
+        os.environ["AIPROXY_TOKEN"] = api_key
     return api_key
 
 # Get the API key
