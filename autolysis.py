@@ -6,6 +6,36 @@ import requests
 import json
 import argparse
 
+import subprocess
+import sys
+
+# Function to ensure dependencies are installed
+def install_dependencies():
+    required_packages = [
+        "seaborn",
+        "pandas",
+        "httpx",
+        "python-dotenv",
+        "rich",
+        "platformdirs"
+		"os"
+		"json"
+		"requests"
+		"matplotlib.pyplot"
+		"argparse"
+    ]
+    for package in required_packages:
+        try:
+            __import__(package)  # Try importing the package
+        except ImportError:
+            print(f"Installing missing package: {package}")
+            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Ensure all dependencies are installed
+install_dependencies()
+
+
+
 from dotenv import load_dotenv
 
 # Load environment variables from the .env file
