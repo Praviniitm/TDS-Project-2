@@ -6,7 +6,6 @@
 #   "seaborn",
 #   "pandas",
 #   "matplotlib",
-#   "json",
 #   "requests",
 #   "argparse"
 # ]
