@@ -8,7 +8,7 @@
 #   "matplotlib",
 #   "requests",
 #   "argparse",
-#   "dotenv"
+#    "python-dotenv"
 # ]
 # ///
 
