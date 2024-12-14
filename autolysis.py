@@ -7,7 +7,8 @@
 #   "pandas",
 #   "matplotlib",
 #   "requests",
-#   "argparse"
+#   "argparse",
+#   "dotenv"
 # ]
 # ///
 
